@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+    font-family: "DM Sans", sans-serif;
+}
+body {
+    background: #e9eed9;
+    padding: 0 16px;
+}
+
+header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cbd2a4;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+header div{
+    display: flex;
+    align-content: space-between;
+    position: relative;
+    float: right;
+}
+
+.nav-menu{
+    flex-grow: 1;
+}
+
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    float: right;
+    justify-content: flex-end;
+    flex-flow: row;
+    color: #f3f3f3;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(16px, 1.5vw, 48px);
+    position: relative;
+    float: right;
+}
+
+.nav-menu ul li{
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    margin: clamp(16px, 0.5vw, 48px);
+    user-select: none;
+}
+
+.nav-menu ul li:hover {
+    color: #1c1c1c;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.nav-menu{
+    float: right;
+    position: relative;
+}
+
+.routeLabels{
+    float: right;
+    position: relative;
+}
+
+.routeLabels h2{
+    position: relative;
+    float: right;
+    padding: 16px 32px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #f3f3f3;
+}
+
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column;
+        display: none;
+        background-color: #69b452;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.open ul {
+        display: block;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .name h1 {
+        font-size: 1.8em; /* Adjust font size on smaller screens */
+    }
+}
+
+header h1{
+    color: #f3f3f3;
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    font-size: clamp(16px, 5vw, 48px);
+}
+
+header h2{
+    color: #f3f3f3;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(16px, 1.5vw, 48px)
+}
+
+header h2 {
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    user-select: none;
+}
+
+header h2:hover {
+    color: #1c1c1c;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin: auto -16px;
+    padding: 16px 32px;
+    width: 100%;
+    background-color: #54473f;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    color: #d3d3d3;
+}
+.note {
+    background: #d3d3d3;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+}
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note button {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #f5ba13;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+}
+
+form {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
+form button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
