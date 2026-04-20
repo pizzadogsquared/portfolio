@@ -15,7 +15,7 @@ This repo is configured for GitHub Pages project-site deployment at:
 
 `https://pizzadogsquared.github.io/portfolio/`
 
-Deployment is handled by GitHub Actions on pushes to the `master` branch.
+Deployment is handled by GitHub Actions on pushes to the `production` branch.
 
 To enable it in GitHub:
 
@@ -23,4 +23,4 @@ To enable it in GitHub:
 2. Open the repository on GitHub.
 3. Go to `Settings -> Pages`.
 4. Under `Build and deployment`, choose `GitHub Actions` as the source.
-5. Push to `master`, or run the `Deploy to GitHub Pages` workflow manually from the `Actions` tab.
+5. Push to `production`, or run the `Deploy to GitHub Pages` workflow manually from the `Actions` tab.
