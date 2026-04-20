@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;700;800&display=swap');
+
+:root {
+  --bg: #eef7ff;
+  --panel: rgba(255, 250, 243, 0.74);
+  --text: #172033;
+  --text-muted: #51627d;
+  --accent: #ff8a00;
+  --accent-warm: #ff4d6d;
+  --heading: 'Outfit', 'Trebuchet MS', sans-serif;
+  --body: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-family: var(--body);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+}
+
+body,
+button,
+a,
+input,
+textarea {
+  font-family: var(--body);
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text);
+  line-height: 0.98;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(3.4rem, 9vw, 6.8rem);
+  letter-spacing: -0.06em;
+  max-width: 11ch;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+p,
+li,
+a {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+::selection {
+  background: rgba(255, 77, 109, 0.24);
+  color: #172033;
+}
