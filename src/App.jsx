@@ -80,12 +80,14 @@ const projects = [
     stack: 'Express.js, Node.js, MySQL, AWS',
     description:
       'A feedback-driven wellness app with authentication, surveys, AI-powered feedback, and backend APIs deployed in AWS.',
+    href: 'https://mebalanced.com',
   },
   {
     title: 'Full-Stack Blog Platform',
     stack: 'React, Node.js, MongoDB',
     description:
       'A responsive blogging platform with authentication, CRUD flows, REST APIs, and secure data handling.',
+    href: 'https://github.com/pizzadogsquared/bloghog',
   },
 ]
 
@@ -817,6 +819,15 @@ function App() {
               <h2>{project.title}</h2>
               <p className="project-stack">{project.stack}</p>
               <p>{project.description}</p>
+              <a
+                className="primary-button project-link"
+                href={project.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit
+                <HiMiniArrowTopRightOnSquare />
+              </a>
             </article>
           ))}
         </MotionSection>
