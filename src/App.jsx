@@ -27,6 +27,7 @@ import {
   SiVuedotjs,
 } from 'react-icons/si'
 import './App.css'
+import resumePdf from './assets/ESprouse_Resume.pdf'
 import headshot from './images/headshot.jpg'
 
 const stats = [
@@ -617,7 +618,16 @@ function App() {
           </div>
 
           <div className="hero-actions">
-            <a className="primary-button" href="#experience-log">
+            <a
+              className="primary-button"
+              href={resumePdf}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Resume
+              <HiMiniArrowTopRightOnSquare />
+            </a>
+            <a className="secondary-button" href="#experience-log">
               View experience
             </a>
             <a className="secondary-button" href="#contact-panel">
