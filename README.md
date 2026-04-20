@@ -11,11 +11,15 @@ You should be able to view it at `http://localhost:5173`.
 
 # Deploying to GitHub Pages
 
-This repo is configured for GitHub Pages project-site deployment at:
+This repo is configured for GitHub Pages deployment at:
 
-`https://pizzadogsquared.github.io/portfolio/`
+`https://www.elijahsprouse.com/`
 
 Deployment is handled by GitHub Actions on pushes to the `production` branch.
+
+If you are not using the custom domain yet, the default GitHub Pages URL will be:
+
+`https://pizzadogsquared.github.io/portfolio/`
 
 To enable it in GitHub:
 
