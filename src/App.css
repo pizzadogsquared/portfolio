@@ -299,7 +299,35 @@
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: 1.5rem;
-  align-items: end;
+  align-items: center;
+}
+
+.hero-copy-text {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-portrait {
+  width: min(100%, 21rem);
+  margin-left: auto;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.4)),
+    rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 24px 60px rgba(59, 87, 120, 0.16),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 1.4rem;
 }
 
 .kicker,
@@ -625,6 +653,15 @@
   .interests-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-copy-text {
+    gap: 0.8rem;
+  }
+
+  .hero-portrait {
+    width: min(100%, 18rem);
+    margin: 0;
   }
 
   .section-header {
