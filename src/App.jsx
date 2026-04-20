@@ -27,6 +27,7 @@ import {
   SiVuedotjs,
 } from 'react-icons/si'
 import './App.css'
+import headshot from './images/headshot.jpg'
 
 const stats = [
   {
@@ -597,17 +598,20 @@ function App() {
           </div>
 
           <div className="hero-copy">
-            <div>
+            <div className="hero-copy-text">
               <p className="kicker">Driving through a bright little city of code, co-op energy, and creative obsessions.</p>
               <h1>Elijah Sprouse</h1>
+              <p className="lede">
+                Computer Science senior graduating in May 2026, building full-stack
+                apps with React, Node.js, databases, and AWS. Founder and President
+                of NAU&apos;s Game Design Club. I'm big on shipping things that feel fun,
+                polished, and actually useful, while bringing real communication and
+                good energy to the team behind them.
+              </p>
             </div>
-            <p className="lede">
-              Computer Science senior graduating in May 2026, building full-stack
-              apps with React, Node.js, databases, and AWS. Founder and President
-              of NAU&apos;s Game Design Club. I'm big on shipping things that feel fun,
-              polished, and actually useful, while bringing real communication and
-              good energy to the team behind them.
-            </p>
+            <div className="hero-portrait">
+              <img src={headshot} alt="Headshot of Elijah Sprouse" />
+            </div>
           </div>
 
           <div className="hero-actions">
