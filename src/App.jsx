@@ -166,7 +166,7 @@ const familiarStacks = [
 
 const interests = [
   {
-    title: 'Competitive and Chaotic',
+    title: 'Competitive Nature',
     icon: GiCastle,
     detail: 'Overwatch, Team Fortress 2, and the kind of team play where communication matters.',
   },
@@ -176,7 +176,7 @@ const interests = [
     detail: 'Baldur’s Gate 3, Metal Gear Solid, and games that reward creative problem solving.',
   },
   {
-    title: 'Builder Energy',
+    title: 'Survival Sandbox',
     icon: GiFlowers,
     detail: 'Minecraft, Terraria, Stardew Valley, and systems you can shape into something personal.',
   },
@@ -602,7 +602,7 @@ function App() {
 
           <div className="hero-copy">
             <div className="hero-copy-text">
-              <p className="kicker">Driving through a bright little city of code, co-op energy, and creative obsessions.</p>
+              <p className="kicker">Driving through a bright city of code, cooperation, and creative obsessions.</p>
               <h1>Elijah Sprouse</h1>
               <p className="lede">
                 Computer Science senior graduating in May 2026, building full-stack
@@ -712,7 +712,7 @@ function App() {
             variants={reveal}
             custom={1}
           >
-            <p className="section-tag">Player card</p>
+            <p className="section-tag">Player info</p>
             <h2>Based in Arizona, ready for the next co-op campaign.</h2>
             <ul className="link-list">
               <li>
@@ -735,7 +735,7 @@ function App() {
               </li>
               <li>
                 <FaMusic />
-                <span>Bass player, builder-game enjoyer, and enthusiastic teammate</span>
+                <span>Bass player, sandbox-game enjoyer, and enthusiastic teammate</span>
               </li>
             </ul>
           </MotionArticle>
@@ -878,7 +878,7 @@ function App() {
           </div>
           <p>
             If you need a developer who can bounce between frontend polish, backend
-            logic, and collaborative delivery without making the work feel dry, this
+            logic, and collaborative delivery without making the work feel dry, the
             route leads straight to me. Bonus points if your team appreciates
             good conversation, strong teamwork, and the occasional game reference.
           </p>
