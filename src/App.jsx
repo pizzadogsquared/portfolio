@@ -61,7 +61,7 @@ const experience = [
     bullets: [
       'Building and maintaining frontend features in a Vue web app to improve interaction quality.',
       'Integrated APIs for dynamic data flows and smoother product behavior.',
-      'Building and maintaining an admin portal in the backend',
+      'Building and maintaining an admin portal in the backend with full CRUD functionality.',
     ],
   },
   {
