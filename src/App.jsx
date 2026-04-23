@@ -810,6 +810,17 @@ function App() {
                       <li key={bullet}>{bullet}</li>
                     ))}
                   </ul>
+                  {role.company === 'Reshape Lab' && role.range.includes('Present') ? (
+                    <a
+                      className="primary-button project-link"
+                      href="https://reshapelab.site"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Visit
+                      <HiMiniArrowTopRightOnSquare />
+                    </a>
+                  ) : null}
                 </div>
               </article>
             ))}
